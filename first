@@ -1,0 +1,51 @@
+//头文件没有.h前面加c
+#include <cmath>
+#include <cstdio>
+///**/为c＋＋的单行注释
+//namespace名字空间防止命名冲突，通过：：运算符置顶空间
+namespace first{
+    int a;
+    void f();
+    int g();
+}
+namespace second{
+    double a;
+    double f;
+}
+int main(){
+    first::a = 2;
+    second::a = 6.05;
+    printf("%d%lf",first::a,second::a);
+
+}
+//三种方式使用名字空间Xname
+/*
+using namespace X//引入整个名字空间
+using X::NAME//使用单个名字
+x::name程序中加上名字控件前缀
+*///头文件没有.h前面加c
+#include <cmath>
+#include <cstdio>
+///**/为c＋＋的单行注释
+//namespace名字空间防止命名冲突，通过：：运算符置顶空间
+namespace first{
+    int a;
+    void f();
+    int g();
+}
+namespace second{
+    double a;
+    double f;
+}
+int main(){
+    first::a = 2;
+    second::a = 6.05;
+    printf("%d%lf",first::a,second::a);
+
+}
+//三种方式使用名字空间Xname
+/*
+using namespace X//引入整个名字空间
+using X::NAME//使用单个名字
+x::name程序中加上名字控件前缀
+*/
